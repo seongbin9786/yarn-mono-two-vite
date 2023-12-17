@@ -1,0 +1,9 @@
+**/.git*
+yarn.lock
+**/.yarn/**
+**/.pnp*
+**/node_modules/**
+**/coverage/**
+**/dist/**
+**/*.md
+!**/.github
