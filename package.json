@@ -5,9 +5,10 @@
         "packages/*"
     ],
     "scripts": {
+        "d": "yarn workspace demo",
         "lint": "yarn lint:eslint && yarn lint:prettier",
-        "lint:eslint": "DEBUG=eslint:cli-engine eslint --fix --ext cjs,.js,.jsx,.ts,.tsx './**/*'",
-        "lint:prettier": "prettier --write --ignore-unknown './**/*' '!./**/*.{cjs,js,jsx,ts,tsx}'",
+        "lint:eslint": "DEBUG=eslint:cli-engine eslint --fix .",
+        "lint:prettier": "prettier --write .",
         "postinstall": "husky install"
     },
     "devDependencies": {

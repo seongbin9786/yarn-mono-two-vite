@@ -2,6 +2,7 @@
 yarn.lock
 **/.yarn/**
 **/.pnp*
+**/vite*
 **/node_modules/**
 **/coverage/**
 **/dist/**

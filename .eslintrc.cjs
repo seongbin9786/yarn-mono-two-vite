@@ -60,14 +60,16 @@ module.exports = {
         "prettier/prettier": ["error", { endOfLine: "auto" }],
     },
     ignorePatterns: [
+        "!**/*.cjs", // cjs는 항상 lint 대상
         "**/.yarn/**",
-        ".pnp*",
+        "**/.pnp*",
+        "**/vite*",
         "yarn.lock",
         "**/node_modules/**",
         "**/dist/**",
         "**/build/**",
         "**/*.md",
         "**/*.css",
-        "!**/*.cjs", // cjs는 항상 lint 대상
+        "**/*.html",
     ],
 };
