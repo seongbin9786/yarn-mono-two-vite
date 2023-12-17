@@ -11,6 +11,7 @@ module.exports = {
         "plugin:import/recommended",
         "plugin:import/typescript",
         "plugin:prettier/recommended",
+        "plugin:react-hooks/recommended",
         "prettier",
     ],
     overrides: [
@@ -38,7 +39,14 @@ module.exports = {
             node: true,
         },
     },
-    plugins: ["@typescript-eslint", "import", "unused-imports", "simple-import-sort", "prettier"],
+    plugins: [
+        "@typescript-eslint",
+        "import",
+        "unused-imports",
+        "simple-import-sort",
+        "react-refresh",
+        "prettier",
+    ],
     rules: {
         "import/no-cycle": "error",
         "import/no-unresolved": "error",
@@ -57,6 +65,7 @@ module.exports = {
                 varsIgnorePattern: "^_",
             },
         ],
+        "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
         "prettier/prettier": ["error", { endOfLine: "auto" }],
     },
     ignorePatterns: [
