@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "skipLibCheck": true,
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "allowSyntheticDefaultImports": true
+    },
+    // vite.config.js 만을 위한 tsconfig
+    // tsconfig에서 reference로 해당 tsconfig도 로딩하는데,
+    // 이 경우 vite.config.ts는 이 config만 적용 받음.
+    "include": ["vite.config.ts"]
+}

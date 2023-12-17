@@ -1,0 +1,15 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        /* Vite 쪽 기본 설정 */
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx"
+    },
+    // src 만을 대상으로 하는 tsconfig
+    // vite.config.js는 이 config의 대상이 아님
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+}
