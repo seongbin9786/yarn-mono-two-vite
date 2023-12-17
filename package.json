@@ -1,0 +1,7 @@
+{
+  "name": "fedc5-14_react",
+  "packageManager": "yarn@4.0.2",
+  "workspaces": [
+    "packages/*"
+  ]
+}
