@@ -2,7 +2,7 @@
 
 ## 1. 기본 구성
 
-- TypeScript, ESLint, Prettier, React, Vite
+- TypeScript, ESLint, Prettier, React, Vite, Husky, Lint-stagedl, Commitlint
 
 ## 2. 각 단계 설명
 
